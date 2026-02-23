@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import axios from "axios"
+import axios from "axios";
 function Oneproduct(){
     const [product, setProduct] = useState(null)
 
@@ -15,7 +15,15 @@ function Oneproduct(){
     
     return(
         <>
-        <Card style={{width:}}></Card>
+        <Card style={{ width: '18rem' }}>
+        <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+            <Card.Text>{product.title}</Card.Text>
+            <Card.Text>{product.price}</Card.Text>
+            <Card.Text>{product.description}</Card.Text>
+        </Card.Body>
+    </Card>
         </>
     )
 }
